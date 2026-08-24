@@ -1,0 +1,46 @@
+---
+title: Introduction
+description: The agent-native framework for evaluating solutions without vibe-ranking or false choices.
+---
+
+# The Hat Framework
+
+**The Hat** is a structured solution evaluation framework designed for software engineering teams and AI coding assistants.
+
+When several ways exist to solve an architectural or design problem, **do not vibe-rank in chat**. Run The Hat loop and maintain living evaluation notes directly inside your repository.
+
+---
+
+## ⚡ Quickstart
+
+### 1. Initialize in Your Repository
+Scaffold `docs/evals/`, reusable templates, and AI agent skills with a single command:
+
+```bash
+npx the-hat init
+```
+
+### 2. Create a Living Evaluation Note
+```bash
+npx the-hat new api-wiring
+```
+
+Or for small, 1-page decisions:
+```bash
+npx the-hat new cache-strategy --minimal
+```
+
+### 3. Prompt Your AI Coding Assistant
+In Cursor, Claude Code, Antigravity, or Copilot:
+> *"Throw this in the hat: /the-hat"*
+
+---
+
+## 💡 Why The Hat?
+
+| The Failure Mode | What Goes Wrong | The Hat Solution |
+| :--- | :--- | :--- |
+| **Vibe-Ranking** | Pros/cons debated without objective criteria; conclusions lost in chat history. | **Metrics & Living Notes:** Every option scored against explicit rubrics in `docs/evals/`. |
+| **False Choices** | Orthogonal concerns (e.g. *Typing* vs *Placement*) forced into a zero-sum deathmatch. | **Layer Splitting:** Deconstructs problems into independent dimensions that compose into **Stacks**. |
+| **Premature ADRs** | Heavy, static post-mortems that bury rejected alternatives, causing bad ideas to resurface. | **Living Hat Inventory:** Keeps rejected ideas scored in the note so they never silently resurface. |
+| **Scope Creep** | Great secondary ideas bloat PRs and delay shipping. | **The A-Tier Icebox:** Preserves high-value extensions without letting them block immediate S-Tier delivery. |

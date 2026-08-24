@@ -1,0 +1,15 @@
+{
+  "title": "Documentation",
+  "pages": [
+    "index",
+    "the-loop",
+    "layer-splitting",
+    "metrics-catalog",
+    "tier-lists-and-stacks",
+    "retrospective-updates",
+    "cli",
+    "agent-integrations",
+    "---Examples---",
+    "examples"
+  ]
+}

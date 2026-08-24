@@ -29,6 +29,20 @@ In Cursor, Claude Code, Antigravity, or GitHub Copilot:
 
 ---
 
+## 📖 Documentation Site (Fumapress)
+
+The full interactive documentation site is powered by [Fumapress](https://press.fumadocs.dev) (built with Fumadocs, Waku & Vite):
+
+```bash
+# Start local docs server
+pnpm docs:dev
+
+# Build production static docs site
+pnpm docs:build
+```
+
+---
+
 ## 💡 Why The Hat?
 
 Every engineering team and AI agent struggles with architectural decisions:
@@ -86,7 +100,7 @@ A **false choice** happens when you debate options that solve different parts of
 
 **Synthesized S-Tier Stack:** $\mathbf{A2} + \mathbf{B2} + \mathbf{C1}$
 
-👉 Read the full guide: [Layer Splitting Deep Dive](docs/layer-splitting.md)
+👉 Read the full guide: [Layer Splitting Deep Dive](apps/docs/content/docs/layer-splitting.mdx)
 
 ---
 
@@ -107,42 +121,26 @@ The Hat is agent-native and ships with drop-in integrations:
 .
 ├── SPEC.md                    # Formal specification of The Hat framework
 ├── README.md                  # Overview & quickstart
-├── package.json               # CLI binary export
+├── package.json               # CLI binary export & root scripts
+├── pnpm-workspace.yaml        # Workspace configuration
 ├── bin/
-│   └── the-hat.mjs            # Zero-dependency CLI (init, new, update, list)
-├── docs/                      # In-depth documentation
-│   ├── overview.md            # Philosophy & comparison
-│   ├── the-loop.md            # The 9-step loop & AI gate
-│   ├── layer-splitting.md     # Orthogonal dimensions vs false choices
-│   ├── metrics-catalog.md     # Baseline metrics taxonomy & custom rubrics
-│   ├── tier-lists-and-stacks.md# S-Tier stacks & The A-Tier Icebox
-│   └── retrospective-updates.md# Evolving living notes over time
+│   └── the-hat.mjs            # Zero-dependency CLI (init, new, check, index, update, list)
+├── apps/
+│   └── docs/                  # Fumapress interactive documentation site
+│       ├── press.config.tsx   # Fumapress configuration (Search, LLMs.txt, MDX)
+│       ├── vite.config.ts     # Vite + TailwindCSS build config
+│       └── content/docs/      # MDX documentation & worked examples
 ├── templates/                 # Reusable templates
 │   ├── evaluation-note.md     # Full canonical living note
 │   ├── minimal-eval.md        # Compact 1-page evaluation
 │   └── retrospective-update.md# Retrospective constraint addendum
 ├── examples/                  # Real-world worked examples
-│   ├── 01-api-design-wiring.md
-│   └── 02-state-management-stack.md
-├── integrations/              # Assistant configs
-│   ├── cursor/
-│   ├── copilot/
-│   └── claude/
+├── integrations/              # Assistant configs (Cursor, Copilot, Claude)
 └── skills/
     └── the-hat/               # Exportable agent skill
         ├── SKILL.md
         └── NOTE-TEMPLATE.md
 ```
-
----
-
-## 🔄 Retrospective Updates
-
-When requirements or dependencies change 6 months later, don't rewrite the note:
-```bash
-npx the-hat update api-wiring
-```
-This appends a structured `## 🔄 Retrospective Update` block to evaluate new options without erasing historical context.
 
 ---
 

@@ -1,0 +1,62 @@
+---
+title: CLI Reference
+description: Complete command-line interface documentation for the-hat.
+---
+
+# CLI Reference
+
+The Hat includes a zero-dependency CLI tool (`the-hat` and `hat`).
+
+```bash
+npx the-hat <command> [options]
+```
+
+---
+
+## Commands
+
+### `init`
+Scaffold The Hat in your project (`docs/evals/`, local templates, `.cursor/rules/the-hat.mdc`, and `.agents/skills/the-hat/`):
+```bash
+npx the-hat init
+```
+
+### `new <name>`
+Create a new living evaluation note:
+```bash
+npx the-hat new auth-session-storage
+```
+Options:
+- `--minimal`: Use the lightweight 1-page template.
+- `--force`: Overwrite existing note.
+
+### `check [file/slug]`
+Lint evaluation notes for structural compliance (ideal for local dev & CI/CD pipelines):
+```bash
+# Check single note
+npx the-hat check auth-session-storage
+
+# Check all notes in docs/evals/
+npx the-hat check
+
+# Strict CI mode (fails on warnings/placeholders)
+npx the-hat check --ci
+```
+
+### `index`
+Dynamically scan `docs/evals/` and generate a master table of all evaluations and their chosen S-tier stacks in `docs/evals/README.md`:
+```bash
+npx the-hat index
+```
+
+### `update <name>`
+Append a structured retrospective update block to an existing evaluation note:
+```bash
+npx the-hat update auth-session-storage
+```
+
+### `list`, `ls`
+Print a terminal summary of all active evaluation notes:
+```bash
+npx the-hat list
+```

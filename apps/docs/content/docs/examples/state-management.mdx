@@ -1,0 +1,41 @@
+---
+title: "Example: State Architecture"
+description: Real-world evaluation of Reactivity Engine vs Storage Engine vs Sync Protocol.
+---
+
+# Worked Example: Client State Architecture
+
+**Status:** Completed | **Chosen public story:** Stack `A1 + B2 + C1` (Fine-grained Signals + IndexedDB + Optimistic SWR)
+
+---
+
+## 1. Problem Statement
+Build an offline-first state management architecture for a dashboard handling 100k+ real-time events without UI lag.
+
+---
+
+## 2. Layer Map
+- **Layer A (Reactivity Engine):** How changes propagate to the DOM / UI components.
+- **Layer B (Persistence Storage):** Where local state is serialized and persisted across sessions.
+- **Layer C (Sync Protocol):** How mutations synchronize with the backend API.
+
+---
+
+## 3. Metrics
+- **Render Budget:** UI updates stay under 16ms under 1000 events/sec.
+- **Offline Durability:** Persist 50MB+ data across browser restarts.
+- **Developer Cognitive Load:** Minimal boilerplate for new slices.
+
+---
+
+## 4. The Hat
+- `A1`: Fine-Grained Signals | `A2`: Immutable Store | `A3`: Mutable Proxy Store
+- `B1`: LocalStorage | `B2`: IndexedDB | `B3`: SQLite WASM (OPFS)
+- `C1`: Optimistic SWR | `C2`: Persistent WebSocket | `C3`: Blocking Sync
+
+---
+
+## 5. Tier List & Stack Synthesis
+- **🏆 S-Tier:** Stack `A1 + B2 + C1` (Signals + IndexedDB + Optimistic SWR)
+- **❄️ A-Tier (Icebox):** `B3` (SQLite WASM for local search)
+- **🔴 C/D-Tier:** `B1` (Quota limit), `C3` (Blocks offline)

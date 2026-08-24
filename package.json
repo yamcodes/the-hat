@@ -9,7 +9,10 @@
   },
   "type": "module",
   "scripts": {
-    "test": "node bin/the-hat.mjs --help"
+    "test": "node bin/the-hat.mjs --help",
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:build": "pnpm --filter docs build",
+    "docs:start": "pnpm --filter docs start"
   },
   "keywords": [
     "evaluation",
@@ -34,5 +37,10 @@
     "docs",
     "SPEC.md",
     "README.md"
-  ]
+  ],
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }
