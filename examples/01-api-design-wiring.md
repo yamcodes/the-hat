@@ -56,23 +56,23 @@ We need to provide JSON Schema export capability for all schema definitions acro
 
 ## 5. Detailed Evaluation
 
-### `A1` — Custom Generic Wrapper
+### `A1` : Custom Generic Wrapper
 - **Pros:** Full control over custom properties and metadata.
 - **Cons:** High maintenance burden; breaks when underlying schema libraries release major updates.
 
-### `A2` — Standard Schema Specification Contract
+### `A2` : Standard Schema Specification Contract
 - **Pros:** Zero maintenance burden for library-specific wrappers; natively interoperates with ArkType, Zod, and Valibot.
 - **Cons:** Requires consumer schema libraries to support Standard Schema (all major ones do).
 
-### `A3` — Any-Casting
+### `A3` : Any-Casting
 - **Pros:** Easy to write initially.
 - **Cons:** Fatal footgun. Silent runtime crashes if unsupported schema types are passed.
 
-### `B1` — Method on Root Instance
+### `B1` : Method on Root Instance
 - **Pros:** Highly discoverable in autocomplete (`env.toJsonSchema()`).
 - **Cons:** Fails the Zero-Weight Tax metric! Forces every production deployment to bundle serializer code.
 
-### `B2` — Separate Subpath Export
+### `B2` : Separate Subpath Export
 - **Pros:** Perfect tree-shaking; 0 bytes added to core runtime bundle; modern Node/Vite export standard.
 - **Cons:** Slightly less discoverable than dot-autocomplete.
 

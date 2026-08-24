@@ -1,5 +1,5 @@
 ---
-description: The Hat Solution Evaluation Framework — guides design alternative comparisons, layer splitting, metrics, and living notes
+description: The Hat Solution Evaluation Framework , guides design alternative comparisons, layer splitting, metrics, and living notes
 globs: docs/evals/**/*.md, docs/evals/*.md
 alwaysApply: false
 ---

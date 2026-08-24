@@ -20,9 +20,9 @@
 - **`B2` (<Option>):** <Summary>
 
 ## 5. Tier List & Stack
-- **🏆 S-Tier (Ship now):** `<A1 + B2>` — <Why it wins>
-- **❄️ A-Tier (Icebox):** `<A2>` — <Great, but not blocking this change>
-- **🔴 C/D (Rejected):** `<B1>` — <Fatal flaw>
+- **🏆 S-Tier (Ship now):** `<A1 + B2>` : <Why it wins>
+- **❄️ A-Tier (Icebox):** `<A2>` : <Great, but not blocking this change>
+- **🔴 C/D (Rejected):** `<B1>` : <Fatal flaw>
 
 ## 6. Concrete Usage (S-Tier)
 ```ts

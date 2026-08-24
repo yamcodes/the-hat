@@ -15,7 +15,7 @@ const command = args[0];
 
 function printHelp() {
   console.log(`
-🎩 The Hat — Solution Evaluation Framework (v${pkg.version})
+🎩 The Hat: Solution Evaluation Framework (v${pkg.version})
 
 USAGE:
   npx the-hat <command> [options]
@@ -183,7 +183,7 @@ function listNotes() {
   console.log(`\n🎩 Active Evaluation Notes in ${path.relative(process.cwd(), targetDir)}:\n`);
   for (const file of files) {
     const info = parseNoteInfo(path.join(targetDir, file));
-    console.log(`  • ${info.file.padEnd(28)} — ${info.title} [Status: ${info.status}] [Story: ${info.chosenStory}]`);
+    console.log(`  • ${info.file.padEnd(28)} : ${info.title} [Status: ${info.status}] [Story: ${info.chosenStory}]`);
   }
   console.log('');
 }
@@ -271,7 +271,7 @@ function check(target, options = {}) {
     const relPath = path.relative(process.cwd(), fullPath);
 
     if (result.errors.length === 0 && result.warnings.length === 0) {
-      console.log(`  ✅ ${relPath} — Structurally compliant`);
+      console.log(`  ✅ ${relPath} : Structurally compliant`);
     } else {
       if (result.errors.length > 0) {
         hasErrors = true;

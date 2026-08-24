@@ -49,7 +49,7 @@ While baseline metrics are useful, **the best metrics match the exact pain of yo
 ### Rules for Inventing Metrics:
 1. **Name the Pain:** If you are rewriting a legacy CLI because flags are hard to discover, create a metric named `Flag Discoverability`.
 2. **Frame as a Question:** Every custom metric must ask a crisp yes/no or comparative question.
-3. **Avoid Synonym Metrics:** Do not create `Simplicity`, `Cleanliness`, and `Elegance` in the same note—they collapse into the same subjective vote.
+3. **Avoid Synonym Metrics:** Do not create `Simplicity`, `Cleanliness`, and `Elegance` in the same note,they collapse into the same subjective vote.
 
 ### Examples of Custom Domain Metrics:
 

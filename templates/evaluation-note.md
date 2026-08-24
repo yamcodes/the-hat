@@ -8,7 +8,7 @@ Living evaluation, not an ADR. Update this file as options enter or leave the ha
 
 ## 1. Problem Statement
 
-<What must be true when we are done — not the first idea that showed up. Frame around user pain, hard invariants, and constraints.>
+<What must be true when we are done : not the first idea that showed up. Frame around user pain, hard invariants, and constraints.>
 
 - **Core Goal:** <Primary requirement>
 - **Hard Constraints:** <Must-have non-negotiables>
@@ -20,9 +20,9 @@ Living evaluation, not an ADR. Update this file as options enter or leave the ha
 
 Decompose the problem into orthogonal dimensions. Items within the same layer compete (substitutes); items across different layers compose (stacks).
 
-- **Layer A (<Dimension Name>):** <What this layer decides — e.g. Syntax & Typing>
-- **Layer B (<Dimension Name>):** <What this layer decides — e.g. Runtime Placement & Lifecycle>
-- **Layer C (<Dimension Name>):** <What this layer decides — e.g. Distribution & Export Strategy>
+- **Layer A (<Dimension Name>):** <What this layer decides : e.g. Syntax & Typing>
+- **Layer B (<Dimension Name>):** <What this layer decides : e.g. Runtime Placement & Lifecycle>
+- **Layer C (<Dimension Name>):** <What this layer decides : e.g. Distribution & Export Strategy>
 
 > *Rule: Do not flatten orthogonal dimensions into one false-choice list.*
 
@@ -62,17 +62,17 @@ Put **every** candidate in the hat, including rejected and out-of-scope options,
 
 Score each option against the metrics in prose. Avoid vibe rankings without evidence.
 
-### `A1` — <Option Name>
+### `A1` : <Option Name>
 - **Strengths:** <Details>
 - **Weaknesses / Footguns:** <Details>
 - **Score against Metrics:** <Prose evaluation per metric>
 
-### `A2` — <Option Name>
+### `A2` : <Option Name>
 - **Strengths:** <Details>
 - **Weaknesses / Footguns:** <Details>
 - **Score against Metrics:** <Prose evaluation per metric>
 
-### `B1` — <Option Name>
+### `B1` : <Option Name>
 - **Strengths:** <Details>
 - **Weaknesses / Footguns:** <Details>
 - **Score against Metrics:** <Prose evaluation per metric>

@@ -1,6 +1,6 @@
 ---
 name: the-hat
-description: Structured solution evaluation framework. Compares design alternatives with a hat → metrics → tier-list loop, splitting composing layers and keeping a living note. Use when there are multiple ways to solve a design/architecture problem, the user says "throw it in the hat" or "/the-hat", asks for a tier list, design eval, or composing layers/dimensions, or when options look like they compose rather than compete — even if they have not named this skill.
+description: Structured solution evaluation framework. Compares design alternatives with a hat → metrics → tier-list loop, splitting composing layers and keeping a living note. Use when there are multiple ways to solve a design/architecture problem, the user says "throw it in the hat" or "/the-hat", asks for a tier list, design eval, or composing layers/dimensions, or when options look like they compose rather than compete, even if they have not named this skill.
 metadata:
   framework: the-hat
 ---

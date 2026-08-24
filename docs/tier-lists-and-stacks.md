@@ -46,7 +46,7 @@ During brainstorming, high-quality ideas often emerge:
 - *"What if we also provide a CLI interactive wizard mode?"*
 - *"What if we add an automatic migration codemod tool?"*
 
-These ideas are not bad—in fact, they score very high! But if you try to ship them all together, the PR balloons, review stalls, and shipping is delayed by weeks.
+These ideas are not bad,in fact, they score very high! But if you try to ship them all together, the PR balloons, review stalls, and shipping is delayed by weeks.
 
 ### The A-Tier Icebox Rule:
 > **A-Tier is for great ideas that are NOT strictly required to close the immediate change.**

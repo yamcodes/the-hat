@@ -16,7 +16,7 @@ Discussions devolve into unstructured pros/cons in Slack, PR comments, or transi
 Options that are actually **orthogonal layers** get forced into a zero-sum deathmatch (e.g. debating "inline helper vs CLI recipe", when one is *typing* and the other is *placement*).
 
 ### 3. The Premature ADR Problem
-Traditional Architecture Decision Records (ADRs) are heavy, static post-mortems. They are written *after* the debate is over, rarely updated when assumptions shift, and bury rejected alternatives where future maintainers never look—causing defeated ideas to resurrect over and over.
+Traditional Architecture Decision Records (ADRs) are heavy, static post-mortems. They are written *after* the debate is over, rarely updated when assumptions shift, and bury rejected alternatives where future maintainers never look,causing defeated ideas to resurrect over and over.
 
 ---
 
@@ -24,7 +24,7 @@ Traditional Architecture Decision Records (ADRs) are heavy, static post-mortems.
 
 The Hat introduces **Living Evaluation Notes** (`docs/evals/<topic>.md`):
 - **Repo-native:** Stored directly in the codebase alongside the code it governs.
-- **Exhaustive Hat:** Every alternative—including half-baked, rejected, and out-of-scope options—is placed in the hat and scored.
+- **Exhaustive Hat:** Every alternative,including half-baked, rejected, and out-of-scope options,is placed in the hat and scored.
 - **Living & Appendable:** When a library dependency changes, a performance bottleneck appears, or new requirements arrive, the note is updated via a structured retrospective addendum.
 - **Promoted only when necessary:** A note only becomes an ADR if the decision is hard to reverse, carries permanent organizational overhead, and represents an irreversible trade-off.
 

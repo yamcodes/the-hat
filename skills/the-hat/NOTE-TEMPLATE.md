@@ -6,11 +6,11 @@ Living evaluation, not an ADR. Update this file as options enter or leave the ha
 
 ## Problem
 
-<What must be true when we are done — not the first idea that showed up.>
+<What must be true when we are done: not the first idea that showed up.>
 
 ## Layer map
 
-- **<Layer A>:** <dimension — items here are substitutes for each other>
+- **<Layer A>:** <dimension: items here are substitutes for each other>
 - **<Layer B>:** <a different dimension; composes with Layer A>
 
 Items on different layers compose. Do not flatten into one list.
@@ -23,13 +23,13 @@ Items on different layers compose. Do not flatten into one list.
 
 ## The hat
 
-### <Layer A — dimension>
+### <Layer A: dimension>
 
 | # | Option | Notes |
 | - | ------ | ----- |
 | A1 | | Include rejected and out-of-scope options so they get scored. |
 
-### <Layer B — dimension>
+### <Layer B: dimension>
 
 | # | Option | Notes |
 | - | ------ | ----- |
@@ -37,14 +37,14 @@ Items on different layers compose. Do not flatten into one list.
 
 ## Evaluation
 
-**<id> <name>** — Prose against the metrics. Not a vibe rank. For a close call, a comparison table is welcome.
+**<id> <name>**: Prose against the metrics. Not a vibe rank. For a close call, a comparison table is welcome.
 
 ## Tier list
 
 Solutions ranked as **answers to the whole problem**. Some are complete; some are pieces. A complete answer may be a **stack** (one pick per layer).
 
 **S (chosen / default story)**
-- **<stack>** — why this is the public story
+- **<stack>**: why this is the public story
 
 **A (Icebox)**
 - Optional tuck-away or distribution. Not a blocker. Do not ship these to close the current change unless they are required.

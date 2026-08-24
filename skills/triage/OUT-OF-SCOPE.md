@@ -6,7 +6,7 @@
 > - **Simple wontfix with no ADR-worthy trade-off** → a closing issue comment is enough; do not invent a new top-level folder.
 > - During triage, check `docs/adr/` (and closed related issues) instead of `.out-of-scope/*.md`.
 >
-> The remainder of this file documents the generic `.out-of-scope/` pattern for reference only — **do not create that directory in ArkEnv**.
+> The remainder of this file documents the generic `.out-of-scope/` pattern for reference only , **do not create that directory in ArkEnv**.
 
 ---
 
