@@ -1,21 +1,21 @@
 ---
-description: The Hat Solution Evaluation Framework
-globs: docs/evals/**/*.md, docs/**/*.md
+description: The Hat Solution Evaluation Framework — guides design alternative comparisons, layer splitting, metrics, and living notes
+globs: docs/evals/**/*.md, docs/evals/*.md
 alwaysApply: false
 ---
 
 # The Hat Framework for Cursor
 
-When evaluating solutions, architectures, API designs, or package choices:
+When evaluating solutions, architectures, API designs, or package choices in a living note:
 
 1. **Do not vibe-rank in chat.**
-2. **Execute Phase 1 first (Steps 1-4):**
-   - Step 1: Define invariant problem.
+2. **Execute Phase 1 first (Steps 1–4):**
+   - Step 1: Define invariant problem (what must be true when done?).
    - Step 2: Split orthogonal layers (do not present false choices).
-   - Step 3: Put every candidate in the hat (`A1`, `A2`, `B1`, `B2`...).
+   - Step 3: Put every candidate in the hat (`A1`, `A2`, `B1`, `B2`... including rejected ones).
    - Step 4: Define problem-fit metrics.
-   - **Pause for user alignment on the layers/hat before scoring.**
-3. **Execute Phase 2 upon user alignment (Steps 5-9):**
+   - **🛑 Stop and pause for user alignment on the layers/hat before scoring.**
+3. **Execute Phase 2 upon user alignment (Steps 5–9):**
    - Step 5: Prose evaluation against metrics.
    - Step 6: Tier list (S/A/B/C/D) and Stack synthesis (`A1 + B2`).
    - Step 7: Concrete S & A usage examples.
