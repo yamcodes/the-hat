@@ -1,0 +1,9 @@
+# The Hat Evaluation Framework Rules
+
+When comparing technical approaches, architecture options, or API designs:
+- Deconstruct the decision into orthogonal layers before comparing options.
+- Put all options (even rejected ones) in the hat (`A1`, `A2`, `B1`, `B2`).
+- Score rigorously against problem-tailored metrics.
+- Rank as complete stacks (S-tier = ship now, A-tier = icebox).
+- Output Steps 1-4 for user confirmation before generating the full tier list.
+- Keep living notes in `docs/evals/<topic>.md`.

@@ -1,0 +1,38 @@
+{
+  "name": "the-hat",
+  "version": "0.1.0",
+  "description": "An agent-ready framework for evaluating technical solutions without vibe-ranking or false choices",
+  "main": "bin/the-hat.mjs",
+  "bin": {
+    "the-hat": "./bin/the-hat.mjs",
+    "hat": "./bin/the-hat.mjs"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node bin/the-hat.mjs --help"
+  },
+  "keywords": [
+    "evaluation",
+    "architecture",
+    "adr",
+    "living-notes",
+    "ai-agent",
+    "decision-framework",
+    "cursor",
+    "tier-list"
+  ],
+  "author": "Yam <yam@yam.codes>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    "templates",
+    "skills",
+    "integrations",
+    "docs",
+    "SPEC.md",
+    "README.md"
+  ]
+}
