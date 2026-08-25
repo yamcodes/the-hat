@@ -38,6 +38,7 @@ This directory contains AI agent skills to improve development, architecture, an
   - [**modularize**](./modularize/SKILL.md): Refactoring and decomposing large files while preserving API contracts.
 
   ### Productivity & Context
+  - [**stop-slop**](./stop-slop/SKILL.md): Remove AI writing patterns from prose.
   - [**wait-what**](./wait-what/SKILL.md): Rapid corrective for model verbosity using `CONTEXT.md` vocabulary.
   - [**handoff**](./handoff/SKILL.md): Compact session context for passing to another agent.
   - [**writing-for-agents**](./writing-for-agents/SKILL.md): Writing documents for agents (skills, AGENTS.md, docs).
